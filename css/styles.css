@@ -2,7 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #757575;
+  /* color: #757575; */
 }
 * {
   margin: 0px;
@@ -54,7 +54,7 @@ body {
 .links:focus,
 .links:hover {
   color: var(--brand-color);
-  fill: #2196f3;
+  fill: var(--brand-color);
 }
 .web-blue {
   color: var(--brand-color);
@@ -266,13 +266,9 @@ body {
   justify-content: center;
   gap: 8px;
 }
-.icons-contact  {
-  border: solid ;
-  color: #757575;
-  fill: var(--brand-color) ;
+.icons-contact {
+  fill: #757575;;
 }
-
-
 :root {
   --brand-background-color: #2f303a;
   --brand-color: #2196f3;
