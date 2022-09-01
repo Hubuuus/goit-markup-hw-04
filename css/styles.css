@@ -22,15 +22,6 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
-.link:visited {
-  text-decoration: none;
-  color: var(--brand-article-color);
-}
-.links:focus,
-.links:hover {
-  color: var(--brand-color);
-  outline: none;
-}
 
 .logo-in-header {
   color: #000000;
@@ -59,6 +50,11 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+.links:focus,
+.links:hover {
+  color: var(--brand-color);
+  fill: #2196f3;
 }
 .web-blue {
   color: var(--brand-color);
@@ -184,9 +180,15 @@ body {
 .in-line-flex-child-two {
   display: flex;
   align-items: center;
-  gap: 50px;
   padding-right: 12px;
+  gap: 50px;
 }
+.in-line-flex-child-two-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .border-header {
   border-bottom: 1px solid #ececec;
   height: 80px;
@@ -194,7 +196,7 @@ body {
 }
 .first-heading-background {
   background: var(--brand-background-color);
-  width: 100%;
+  min-width: auto;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -264,6 +266,11 @@ body {
   justify-content: center;
   gap: 8px;
 }
+.icons-contact  {
+  border: solid ;
+  fill: #2196f3;
+}
+
 
 :root {
   --brand-background-color: #2f303a;
