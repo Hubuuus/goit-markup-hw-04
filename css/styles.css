@@ -268,7 +268,8 @@ body {
 }
 .icons-contact  {
   border: solid ;
-  fill: #2196f3;
+  color: #757575;
+  fill: var(--brand-color) ;
 }
 
 
