@@ -267,7 +267,23 @@ body {
   gap: 8px;
 }
 .icons-contact {
-  fill: #757575;;
+  fill: #757575;
+}
+.icons-box {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-flex-wrap {
+display: inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 30px;
 }
 :root {
   --brand-background-color: #2f303a;
