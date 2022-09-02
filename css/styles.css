@@ -200,15 +200,22 @@ body {
   width: 100%;
 }
 .first-heading-background {
-  background-color: var(--brand-background-color);
-  background-image: url("images/background.png");
-  min-width: 1600px;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(0deg, 
+  rgba(44, 44, 44, 0.7) 0%,
+  rgba(44, 44, 44, 0.2) 35%,
+  rgba(44, 44, 44, 0.2) 65%,
+  rgba(44, 44, 44, 0.2) 65%,
+  rgba(44, 44, 44, 0.7) 100% ),
+  url("../images/background.png");
+  background-repeat: no-repeat;
+  width: 1600px;
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px dashed #2196f3;
+  
 }
 .first-heading {
   width: 696px;
