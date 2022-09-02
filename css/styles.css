@@ -108,6 +108,14 @@ body {
   box-shadow: 0px 1px 3px 0px #0000001f;
   padding-bottom: 20px;
 }
+.list-img > li:focus,
+.list-img > li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .padding-text-under-portfolio {
   padding-left: 24px;
 }
@@ -201,21 +209,23 @@ body {
 }
 .first-heading-background {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(0deg, 
-  rgba(44, 44, 44, 0.7) 0%,
-  rgba(44, 44, 44, 0.2) 35%,
-  rgba(44, 44, 44, 0.2) 65%,
-  rgba(44, 44, 44, 0.2) 65%,
-  rgba(44, 44, 44, 0.7) 100% ),
-  url("../images/background.png");
-  background-repeat: no-repeat;
-  width: 1600px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(44, 44, 44, 0.7) 0%,
+      rgba(44, 44, 44, 0.2) 35%,
+      rgba(44, 44, 44, 0.2) 65%,
+      rgba(44, 44, 44, 0.2) 65%,
+      rgba(44, 44, 44, 0.7) 100%
+    ),
+    url("../images/background.png");
+  background-repeat: repeat;
+  background-position: center;
+  min-width: 1600px;
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .first-heading {
   width: 696px;
@@ -248,13 +258,16 @@ body {
 .list-item-lorem {
   width: 270px;
 }
+.margin-lorem {
+  margin-top: 94px;
+}
 .list-img {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 30px;
   margin-top: 50px;
 }
+
 .footer-background {
   background-color: var(--brand-background-color);
   width: 100%;
@@ -332,7 +345,6 @@ body {
   cursor: pointer;
 }
 
-
 .icons-client-box > :nth-child(n) {
   fill: #afb1b8;
   width: 170px;
@@ -355,7 +367,7 @@ body {
 }
 .footer_flex {
   display: flex;
-  gap :70px;
+  gap: 70px;
 }
 .footer_flex > :first-child {
   padding-top: 60px;
@@ -364,14 +376,14 @@ body {
   padding-top: 72px;
 }
 .join-us {
-margin-bottom: 20px;
-color: var(--text-on-dark-background);
-font-family: Roboto;
-font-size: 14px;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-align: left;
+  margin-bottom: 20px;
+  color: var(--text-on-dark-background);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 :root {
