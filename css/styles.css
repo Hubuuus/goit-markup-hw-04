@@ -2,7 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  /* color: #757575; */
+  color: #757575;
 }
 * {
   margin: 0px;
@@ -14,6 +14,10 @@ body {
 }
 .section {
   padding: 94px 0px;
+}
+.background-section {
+  background: #f5f4fa;
+  min-width: 100%;
 }
 .not-dot {
   list-style-type: none;
@@ -42,7 +46,7 @@ body {
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--item-gray);
 }
 .links-in-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -228,6 +232,7 @@ body {
 }
 .list-lorem {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 .list-item-lorem {
@@ -236,6 +241,7 @@ body {
 .list-img {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-top: 50px;
 }
@@ -267,7 +273,7 @@ body {
   gap: 8px;
 }
 .icons-contact {
-  fill: #757575;
+  fill: var(--item-gray);
 }
 .icons-box {
   width: 270px;
@@ -280,14 +286,66 @@ body {
   align-items: center;
 }
 .icon-flex-wrap {
-display: inline-flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+.icon-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icon-social > :nth-child(n) {
+  border: solid 0px;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  radius: 50%;
+  background-color: none;
+  fill: var(--item-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-social :hover,
+.icon-social :focus {
+  background-color: var(--brand-color);
+  fill: var(--text-on-dark-background);
+  cursor: pointer;
+}
+.icons-client-box{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.icons-client-box > :nth-child(n) {
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.icons-client-box > :nth-child(n):hover,
+.icons-client-box > :nth-child(n):focus {
+  fill: var(--brand-color);
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 :root {
   --brand-background-color: #2f303a;
   --brand-color: #2196f3;
   --brand-article-color: #212121;
   --text-on-dark-background: #ffffff;
+  --item-gray: #757575;
 }
