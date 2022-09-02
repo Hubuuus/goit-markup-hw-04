@@ -36,7 +36,6 @@ body {
   line-height: 1;
   letter-spacing: 0.03em;
   word-spacing: 0;
-  /* padding-left: 15px; */
 }
 .links-in-nav {
   font-size: 14px;
@@ -201,13 +200,15 @@ body {
   width: 100%;
 }
 .first-heading-background {
-  background: var(--brand-background-color);
-  min-width: auto;
+  background-color: var(--brand-background-color);
+  background-image: url("images/background.png");
+  min-width: 1600px;
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px dashed #2196f3;
 }
 .first-heading {
   width: 696px;
@@ -261,9 +262,6 @@ body {
   letter-spacing: 0.03em;
   word-spacing: 0;
 }
-.padding-logo {
-  padding: 60px 0px 20px 0px;
-}
 .item-list-address {
   display: flex;
   flex-direction: column;
@@ -311,17 +309,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+.icons-client-box {
+  display: flex;
+  /* justify-content: center; */
+  gap: 30px;
+}
+.icon-social-footer > :nth-child(n) {
+  fill: var(--text-on-dark-background);
+  background-color: #ffffff1a;
+}
 .icon-social :hover,
 .icon-social :focus {
   background-color: var(--brand-color);
   fill: var(--text-on-dark-background);
   cursor: pointer;
 }
-.icons-client-box{
-  display: flex;
-  /* justify-content: center; */
-  gap: 30px;
-}
+
+
 .icons-client-box > :nth-child(n) {
   fill: #afb1b8;
   width: 170px;
@@ -333,7 +337,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .icons-client-box > :nth-child(n):hover,
 .icons-client-box > :nth-child(n):focus {
@@ -342,6 +345,26 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: 0.5s;
+}
+.footer_flex {
+  display: flex;
+  gap :70px;
+}
+.footer_flex > :first-child {
+  padding-top: 60px;
+}
+.footer_flex > :last-child {
+  padding-top: 72px;
+}
+.join-us {
+margin-bottom: 20px;
+color: var(--text-on-dark-background);
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-align: left;
 }
 
 :root {
