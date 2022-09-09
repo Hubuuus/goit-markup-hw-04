@@ -310,6 +310,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+
+
+
+
+
+
 }
 .icon-social {
   display: flex;
@@ -327,6 +333,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
 }
 .icons-client-box {
   display: flex;
@@ -354,7 +361,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+  
 }
 .icons-client-box > :nth-child(n):hover,
 .icons-client-box > :nth-child(n):focus {
