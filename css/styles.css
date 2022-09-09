@@ -8,6 +8,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 .container {
   width: 1200px;
   margin: auto;
@@ -266,7 +267,25 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+ 
 }
+.list-img li{
+width: 370px;
+height: 294px;
+}
+.list-img div{
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px 0px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 74px;
+  }
 
 .footer-background {
   background-color: var(--brand-background-color);
@@ -310,19 +329,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-
-
-
-
-
-
 }
 .icon-social {
   display: flex;
   justify-content: center;
   gap: 10px;
+
 }
-.icon-social > :nth-child(n) {
+.icon-social li{
   border: solid 0px;
   border-radius: 50%;
   height: 44px;
@@ -339,12 +353,12 @@ body {
   display: flex;
   gap: 30px;
 }
-.icon-social-footer > :nth-child(n) {
+.icon-social-footer li {
   fill: var(--text-on-dark-background);
   background-color: #ffffff1a;
 }
-.icon-social :hover,
-.icon-social :focus {
+.icon-social li:hover,
+.icon-social li:focus {
   background-color: var(--brand-color);
   fill: var(--text-on-dark-background);
   cursor: pointer;
@@ -389,6 +403,10 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+}
+.invade li,a{
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
