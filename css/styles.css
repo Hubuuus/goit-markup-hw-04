@@ -13,6 +13,7 @@ body {
   width: 1200px;
   margin: auto;
   padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding: 94px 0px;
@@ -27,6 +28,9 @@ body {
 .links {
   text-decoration: none;
   font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--brand-article-color);
 }
 .logo-in-header {
   color: #000000;
@@ -36,12 +40,6 @@ body {
   line-height: 1;
   letter-spacing: 0.03em;
   word-spacing: 0;
-}
-.links-in-nav {
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  color: var(--brand-article-color);
 }
 .links-in-header {
   font-size: 14px;
@@ -172,35 +170,49 @@ body {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
-.in-line-flex {
+.flex{
   display: flex;
-  flex-direction: row;
-  /* gap: 46px; */
+  height: 80px;
+  align-items: center;
   justify-content: space-between;
 }
-.in-line-flex-child-one {
+.flex ul{
+  display: inline-flex;
+}
+.flex ul li a {
   display: flex;
   align-items: center;
-  height: 80px;
-}
-.in-line-flex-child-one > :not(:first-child) {
-  margin-left: 46px;
-}
-.in-line-flex-child-one > :first-child {
-  padding-right: 93px;
-}
-
-.in-line-flex-child-two {
-  display: flex;
-  align-items: center;
-  padding-right: 12px;
-  gap: 50px;
-}
-.in-line-flex-child-two-logo {
-  display: flex;
-  align-items: center;
+  margin-left: 30px;
   gap: 10px;
 }
+.flex nav {
+  display: flex;
+  align-items: center;
+}
+.flex li {
+  align-items: center;
+  gap: 40px;
+}
+.flex nav>:not(:first-child){
+  margin-left: 46px;
+}
+.flex nav>:nth-child(1){
+  margin-right: 93px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .border-header {
   border-bottom: 1px solid #ececec;
@@ -220,7 +232,7 @@ body {
     url("../images/background.png");
   background-repeat: repeat;
   background-position: center;
-  max-width: 1600px;
+  max-width: 1600vw;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -401,7 +413,17 @@ a {
   transition: 250ms;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.underline::after {
+  position: relative;
+  display: block;
+  content: "";
+  top: 32px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--brand-color);
+  pointer-events: none;
+}
 :root {
   --brand-background-color: #2f303a;
   --brand-color: #2196f3;
