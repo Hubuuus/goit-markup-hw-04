@@ -175,7 +175,7 @@ body {
 .in-line-flex {
   display: flex;
   flex-direction: row;
-  gap: 46px;
+  /* gap: 46px; */
   justify-content: space-between;
 }
 .in-line-flex-child-one {
@@ -184,7 +184,7 @@ body {
   height: 80px;
 }
 .in-line-flex-child-one > :not(:first-child) {
-  padding-left: 46px;
+  margin-left: 46px;
 }
 .in-line-flex-child-one > :first-child {
   padding-right: 93px;
@@ -267,19 +267,19 @@ body {
   gap: 30px;
   margin-top: 50px;
 }
-.list-img>li>div{
+.list-img > li > div {
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   padding: 27px 0px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   bottom: 74px;
-  }
+}
 
 .footer-background {
   background-color: var(--brand-background-color);
@@ -328,9 +328,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-
 }
-.icon-social li{
+.icon-social li {
   border: solid 0px;
   border-radius: 50%;
   height: 44px;
@@ -369,7 +368,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .icons-client-box > :nth-child(n):hover,
 .icons-client-box > :nth-child(n):focus {
@@ -398,14 +396,11 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
 }
-.invade li,a{
+.invade li,
+a {
   transition: 250ms;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 :root {
   --brand-background-color: #2f303a;
