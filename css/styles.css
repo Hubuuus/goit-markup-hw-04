@@ -28,7 +28,6 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
-
 .logo-in-header {
   color: #000000;
   font-family: "Raleway";
@@ -267,13 +266,8 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
- 
 }
-.list-img li{
-width: 370px;
-height: 294px;
-}
-.list-img div{
+.list-img>li>div{
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   padding: 27px 0px;
@@ -408,6 +402,10 @@ height: 294px;
   transition: 250ms;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
 
 :root {
   --brand-background-color: #2f303a;
