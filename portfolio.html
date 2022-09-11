@@ -17,34 +17,29 @@
   <body>
     <header>
       <div class="border-header">
-        <div class="container in-line-flex">
+        <div class="invade container flex">
           <!-- <nav> -->
-          <ul class="not-dot in-line-flex-child-one">
-            <li>
-              <a class="links logo-in-header" href="index.html">
-                <span> <span class="web-blue"> Web</span>Studio </span>
-              </a>
-            </li>
-            <li><a class="links links-in-nav" href="Agencja">Agencja</a></li>
-            <li><a class="links links-in-nav" href="portfolio.html">Portfolio</a></li>
-            <li><a class="links links-in-nav" href="Kontakt">Kontakt</a></li>
-          </ul>
+          <nav class="not-dot">
+            <a class="links logo-in-header" href="index.html">
+              <span> <span class="web-blue"> Web</span>Studio </span>
+            </a>
+            <a class="links" href="Agencja">Agencja</a>
+            <a class="links underline" href="portfolio.html">Portfolio</a>
+            <a class="links" href="Kontakt">Kontakt</a>
+          </nav>
           <!-- </nav> -->
-          <ul class="not-dot in-line-flex-child-two">
+          <ul class="not-dot">
             <li class="icons-contact">
-              <a
-                class="in-line-flex-child-two-logo links links-in-header"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="links" viewbox="0 0 1 1" height="16px">
+              <a class="links links-in-header" href="mailto:info@devstudio.com">
+                <svg viewbox="0 0 1 1" height="16px">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li class="icons-contact">
-              <a class="in-line-flex-child-two-logo links links-in-header" href="tel:+48111111111">
-                <svg class="links" viewbox="0 0 1 1" height="16px">
+              <a class="links links-in-header" href="tel:+48111111111">
+                <svg viewbox="0 0 1 1" height="16px">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111</a
@@ -57,7 +52,7 @@
     <main>
       <div class="container">
         <section class="section">
-          <ul class="not-dot list-button">
+          <ul class="not-dot list-button invade">
             <li>
               <button class="button">Wszystkie</button>
             </li>
@@ -74,7 +69,7 @@
               <button class="button">Marketing</button>
             </li>
           </ul>
-          <ul class="not-dot list-img shadow-img">
+          <ul class="not-dot list-img shadow-img invade">
             <li>
               <figure class="text-under-portfolio">
                 <img
@@ -83,6 +78,13 @@
                   width="370"
                   height="294"
                 />
+                <div class="roll-up">
+                  <div class="text">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji
+                  </div>
+                </div>
                 <div class="padding-text-under-portfolio">
                   <h4 class="heading-under-portfolio">Technocrack</h4>
                   Strona internetowa
@@ -217,7 +219,7 @@
               </h2>
               <address>
                 <ul class="not-dot item-list-address">
-                  <li><a class="links adress">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                  <li><a class="links address">m. Warszawa, Aleje Jerozolimskie 21</a></li>
                   <li>
                     <a class="links links-in-footer" href="mailto:info@example.com"
                       >info@example.com</a

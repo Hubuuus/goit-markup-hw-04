@@ -30,10 +30,7 @@
           <!-- </nav> -->
           <ul class="not-dot">
             <li class="icons-contact">
-              <a
-                class="links links-in-header"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="links links-in-header" href="mailto:info@devstudio.com">
                 <svg viewbox="0 0 1 1" height="16px">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -41,7 +38,7 @@
               >
             </li>
             <li class="icons-contact">
-              <a class=" links links-in-header" href="tel:+48111111111">
+              <a class="links links-in-header" href="tel:+48111111111">
                 <svg viewbox="0 0 1 1" height="16px">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -54,9 +51,8 @@
     </header>
     <main>
       <div class="first-heading-background">
-        <h1 class="first-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-        </h1>
-        <button class="button first-button">Zamów usługe</button>
+        <h1 class="first-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="button first-button" data-modal-open>Zamów usługe</button>
       </div>
       <div class="container">
         <section class="margin-lorem">
@@ -125,9 +121,7 @@
                 width="370"
                 height="294"
               />
-              <div>
-                APLIKACJE KOMPUTEROWE
-              </div>
+              <div>APLIKACJE KOMPUTEROWE</div>
             </li>
 
             <li>
@@ -137,9 +131,7 @@
                 width="370"
                 height="294"
               />
-              <div>
-                APLIKACJE MOBILNE
-              </div>
+              <div>APLIKACJE MOBILNE</div>
             </li>
             <li>
               <img
@@ -148,9 +140,7 @@
                 width="370"
                 height="294"
               />
-              <div>
-                ROZWIĄZANIA GRAFICZNE
-              </div>
+              <div>ROZWIĄZANIA GRAFICZNE</div>
             </li>
           </ul>
         </section>
@@ -173,8 +163,8 @@
                   <ul class="not-dot icon-social">
                     <li>
                       <div>
-                      <svg height="20px" width="20px">
-                          <use href="images\icons.svg#icon-instagram"></use>                   
+                        <svg height="20px" width="20px">
+                          <use href="images\icons.svg#icon-instagram"></use>
                         </svg>
                       </div>
                     </li>
@@ -352,7 +342,7 @@
               </h2>
               <address>
                 <ul class="not-dot item-list-address">
-                  <li><a class="links adress">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                  <li><a class="links address">m. Warszawa, Aleje Jerozolimskie 21</a></li>
                   <li>
                     <a class="links links-in-footer" href="mailto:info@example.com"
                       >info@example.com</a
@@ -393,5 +383,16 @@
         </footer>
       </div>
     </div>
+    <div class="backdrop is-hidden " data-modal>
+      <div class="modal">
+        <div class="close" data-modal-close>
+          <svg viewBox="0 0 30 30" height="30px" width="30px"
+          >
+            <use href="images\icons.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
