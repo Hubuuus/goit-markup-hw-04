@@ -249,6 +249,18 @@ body {
   letter-spacing: 0.06em;
   color: var(--text-on-dark-background);
 }
+.submit-button{
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--text-on-dark-background);
+}
 .list-lorem {
   display: flex;
   justify-content: center;
@@ -379,13 +391,16 @@ body {
   display: flex;
   gap: 70px;
 }
-.footer_flex > :first-child {
+.footer_flex>:first-child {
   padding-top: 60px;
 }
-.footer_flex > :last-child {
+.footer_flex>:not(first-child) {
   padding-top: 72px;
 }
-.join-us {
+.footer_flex>li>form>label {
+padding-right: 12px;
+}
+.footer-text-element {
   margin-bottom: 20px;
   color: var(--text-on-dark-background);
   font-family: Roboto;
